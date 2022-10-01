@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>To Do Apps</title>
+</head>
+<body>
+   
+  <header class=" lg:p-5 bg-gray-200">  
+    <section>
+        <h1 class=" w-full text-3xl font-bold text-gray-300 bg-slate-500 text-center p-1"> Apps</h1>
+    </section>
+    <section class="bg-slate-300 border-slate-900 border-2 p-0 w-full flex justify-center flex-col items-center">
+       <h2 class=" w-full text-center text-xl font-medium text-gray-400 bg-gray-700 p-2"> Applicant page </h2>
+       <form class=" w-1/2 ">
+        <input id="namee" placeholder="Your Full Name" class=" placeholder:text-gray-700 px-1 w-full mt-1  bg-slate-400  border-2 border-gray-900" type="text" id="fname">
+         <input id="mail" placeholder="Your E-mail" class=" placeholder:text-gray-700 px-1 w-full mt-1  bg-slate-400  border-2 border-gray-900" type="email" id="price">
+         <input id="mobilenumer" placeholder=" Your Mobile Number" class=" placeholder:text-gray-700 px-1 w-full mt-1  bg-slate-400  border-2 border-gray-900" type="text" id="fname">
+        <input id="courseName" placeholder=" Course Name" class=" placeholder:text-gray-700 px-1 w-full mt-1  bg-slate-400  border-2 border-gray-900" type="text" id="fname">
+        <input id="price" placeholder=" Course Price" class=" placeholder:text-gray-700 px-1 w-full mt-1  bg-slate-400  border-2 border-gray-900" type="number" id="fname">
+       <input id="submit" type="submit" value="SUBMIT" class=" p-1 bg-slate-700 text-slate-200  w-full font-medium"  >
+      </form>
+    </section>
+<section class=" flex flex-col lg:flex-row text-xs justify-center items-center lg:items-start">
+    <section class=" p-1 text-center">
+        <h2 class=" w-full text-gray-900 bg-gray-500 p-1 text-center font-medium text-sm"> Admin page</h2>
+        <table id="admin" class=" table-auto bg-gray-700 border-2  ">
+            <thead>
+                <tr class=" bg-gray-500 ">
+                     <th class=" p-1"> Name</th>
+                     <th class=" p-1"> E-mail</th>
+                     <th class=" p-1">Mobile</th>
+                     <th class=" p-1">course name</th>
+                     <th class=" p-1"> price</th>
+                     <th class=" p-1"> active status</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyadmin">
+                <tr class=" bg-gray-400 ">
+                    <td class=" p-1 ">Arif</td>
+                    <td class=" p-1 ">arif@gmail.com</td>
+                    <td class=" p-1 ">+88012555555</td>
+                    <td class=" p-1 ">CREATIVE FRONT-END</td>
+                    <td class=" p-1 ">8000</td>
+                    <td class=" p-1"><button class=" bg-gray-700 text-gray-300 p-1 rounded paid">paid</button> <button class=" bg-gray-700 text-gray-300 p-1 rounded  nonepaid">None paid</button> <button class=" bg-red-900 text-gray-300 p-1 rounded delet">Delet</button></td>
+                </tr>
+                <tr class=" bg-gray-400 ">
+                    <td class=" p-1 ">Arif</td>
+                    <td class=" p-1 ">arif@gmail.com</td>
+                    <td class=" p-1 ">+88012555555</td>
+                    <td class=" p-1 ">CREATIVE FRONT-END</td>
+                    <td class=" p-1 ">8000</td>
+                    <td class=" p-1"><button class=" bg-gray-700 text-gray-300 p-1 rounded paid">paid</button> <button class=" bg-gray-700 text-gray-300 p-1 rounded  nonepaid">None paid</button> <button class=" bg-red-900 text-gray-300 p-1 rounded delet">Delet</button></td>
+                </tr>
+                <tr class=" bg-gray-400 ">
+                    <td class=" p-1 ">Arif</td>
+                    <td class=" p-1 ">arif@gmail.com</td>
+                    <td class=" p-1 ">+88012555555</td>
+                    <td class=" p-1 ">CREATIVE FRONT-END</td>
+                    <td class=" p-1 ">8000</td>
+                    <td class=" p-1"><button class=" bg-gray-700 text-gray-300 p-1 rounded paid">paid</button> <button class=" bg-gray-700 text-gray-300 p-1 rounded nonepaid">None paid</button> <button class=" bg-red-900 text-gray-300 p-1 rounded delet">Delet</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class=" p-1 text-center">
+        <h2 class=" w-full text-gray-900 bg-gray-500 p-1 text-center font-medium text-sm"> Pending list</h2>
+        <table id="pending" class=" table-auto bg-gray-700 border-2">
+            <thead>
+                <tr class=" bg-gray-500 ">
+                     <th class=" p-1"> Name</th>
+                     <th class=" p-1"> E-mail</th>
+                     <th class=" p-1">Mobile</th>
+                     <th class=" p-1">course name</th>
+                     <th class=" p-1"> price</th>
+                     <th class=" p-1"> active status</th>
+                </tr>
+            </thead>
+            <tbody id="tbodypending">
+                <tr class=" bg-gray-400">
+                    <td class=" p-1 ">Raju</td>
+                    <td class=" p-1 ">raju@gmail.com</td>
+                    <td class=" p-1 ">+88013555555</td>
+                    <td class=" p-1 ">CREATIVE FRONT-END</td>
+                    <td class=" p-1 ">8000</td>
+                    <td class=" p-1 "> <button class=" bg-gray-700 text-gray-300 p-1 rounded paid">paid</button> <button class=" bg-gray-700 text-gray-300 p-1 rounded nonepaid">None paid</button> <button class=" bg-red-900 text-gray-300 p-1 rounded delet">Delet</button></td>
+                </tr>
+                <tr class=" bg-gray-400 ">
+                    <td class=" p-1 ">Raju</td>
+                    <td class=" p-1 ">raju@gmail.com</td>
+                    <td class=" p-1 ">+88013555555</td>
+                    <td class=" p-1 ">CREATIVE FRONT-END</td>
+                    <td class=" p-1 ">8000</td>
+                    <td class=" p-1 "><button class=" bg-gray-700 text-gray-300 p-1 rounded paid">paid</button> <button class=" bg-gray-700 text-gray-300 p-1 rounded nonepaid">None paid</button> <button class=" bg-red-900 text-gray-300 p-1 rounded delet">Delet</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class=" p-1 text-center">
+        <h2 class=" w-full text-gray-900 bg-gray-500 p-1 text-center font-medium text-sm"> active </h2>
+        <table id="active" class=" table-auto bg-gray-700 border-2  ">
+            <thead>
+                <tr class=" bg-gray-500  ">
+                     <th class=" p-1"> Name</th>
+                     <th class=" p-1"> E-mail</th>
+                     <th class=" p-1">Mobile</th>
+                     <th class=" p-1">course name</th>
+                     <th class=" p-1"> price</th>
+                     <th class=" p-1"> active status</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyActive">
+                <tr class=" bg-gray-400">
+                    <td class=" p-1 ">jamil</td>
+                    <td class=" p-1 ">jamil@gmail.com</td>
+                    <td class=" p-1 ">+88018555555</td>
+                    <td class=" p-1 ">CREATIVE FRONT-END</td>
+                    <td class=" p-1 ">8000</td>
+                    <td class=" p-1 "><button class=" bg-gray-700 text-gray-300 p-1 rounded paid">paid</button> <button class=" bg-gray-700 text-gray-300 p-1 rounded nonepaid">None paid</button> <button class=" bg-red-900 text-gray-300 p-1 rounded delet">Delet</button></td>
+                </tr>
+                <tr class=" bg-gray-400">
+                    <td class=" p-1 ">jamil</td>
+                    <td class=" p-1 ">jamil@gmail.com</td>
+                    <td class=" p-1 ">+88018555555</td>
+                    <td class=" p-1 ">CREATIVE FRONT-END</td>
+                    <td class=" p-1 ">8000</td>
+                    <td class=" p-1 "><button class=" bg-gray-700 text-gray-300 p-1 rounded paid">paid</button> <button class=" bg-gray-700 text-gray-300 p-1 rounded nonepaid">None paid</button> <button class=" bg-red-900 text-gray-300 p-1 rounded delet">Delet</button> </td>
+                </tr>
+                <tr class=" bg-gray-400">
+                    <td class=" p-1 ">jamil</td>
+                    <td class=" p-1 ">jamil@gmail.com</td>
+                    <td class=" p-1 ">+88018555555</td>
+                    <td class=" p-1 ">CREATIVE FRONT-END</td>
+                    <td class=" p-1 ">8000</td>
+                    <td class=" p-1 "><button class=" bg-gray-700 text-gray-300 p-1 rounded paid">paid</button> <button class=" bg-gray-700 text-gray-300 p-1 rounded nonepaid">None paid</button> <button class=" bg-red-900 text-gray-300 p-1 rounded delet">Delet</button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</section>
+ </header>
+ <script src="script.js"></script>
+</body>
+</html>
