@@ -64,7 +64,21 @@ let submit = document.querySelector('#submit');
 
    tbodyadmin.appendChild(createaAdminTr);
    console.log(createaAdminTr);
+   addengind();
+   namee.value = "";
+   mailee.value = ""
+   mobilenumer.value = "";
+   courseName.value = " ";
+   price.value = " ";
+}
 
+    });
+    window.onload = ()=>{
+      addengind();
+    }
+ 
+    function addengind(){
+      
 
    let alldeletClass = document.querySelectorAll('.delet');
    let allpaidclass = document.querySelectorAll('.paid');
@@ -92,13 +106,5 @@ let submit = document.querySelector('#submit');
     })
    }
 
-   namee.value = "";
-   mailee.value = ""
-   mobilenumer.value = "";
-   courseName.value = " ";
-   price.value = " ";
-}
-
-    });
- 
+    }
 // admin table value
